@@ -1,0 +1,93 @@
+.albums{
+
+   &__container{
+      max-width: 1400px;
+      margin: 0 auto;
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 70px;
+
+      @media screen and (max-width: 800px) {
+         padding-left: 50px;
+         padding-right: 50px;
+      }
+      @media screen and (max-width: 400px) {
+         padding-left: 32px;
+         padding-right: 32px;
+      }
+   }
+
+   &__title{
+      margin-bottom: 70px;
+      text-align: center;
+      color: #673AB7;
+   }
+
+   &-list{
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   &-item{
+      display: flex;
+      justify-content: center;
+      width: 33.333%;
+      margin-bottom: 150px;
+
+      @media screen and (max-width: 1100px) {
+         width: 50%;
+      }
+      @media screen and (max-width: 700px) {
+         width: 100%;
+      }
+
+      &__link{
+         position: relative;
+         width: 256px;
+         height: 256px;
+         background-image: url(../../assets/album.svg);
+         background-size: auto 100%;
+         background-position: center;
+         background-repeat: no-repeat;
+         color: black;
+         transition: .25s ease;
+
+         &:hover{
+            transform: scale(1.1);
+         }
+      }
+
+      &__name{
+         position: absolute;
+         left: 50%;
+         bottom: 100%;
+         transform: translateX(-50%);
+         width: 100%;
+         padding: 0 8px 10px 30px;
+         font-size: 15px;
+         font-style: italic;
+         text-align: center;
+      }
+
+      &__cover{
+         position: absolute;
+         top: 36px;
+         left: 64px;
+         width: 150px;
+         height: 150px;
+         object-fit: cover;
+      }
+
+      &__size{
+         position: absolute;
+         bottom: 33px;
+         width: 100%;
+         padding: 0 6px 0 28px;
+         font-size: 17px;
+         color: #ffffff;
+         text-align: center;
+      }
+   }
+
+   
+}

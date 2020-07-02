@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;500;800&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style-type: none;
+   outline: none;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #f0f0f0;
+   font-family: 'MuseoModerno', cursive;
+   letter-spacing: .5px;
+   font-size: 16px;
+   line-height: 1.4;
+   font-weight: 500;
+
+   &.modal-open {
+      overflow: hidden;
+   }
+}

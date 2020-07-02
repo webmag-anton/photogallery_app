@@ -1,0 +1,59 @@
+.authors{
+   background-image: url(../../assets/photographer.svg);
+   background-size: 200px auto;
+   background-position: right top;
+   background-repeat: no-repeat;
+
+   @media screen and (max-width: 800px) {
+      background-size: 160px auto;
+   }
+
+   &__container{
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-top: 70px;
+      padding-bottom: 40px;
+
+      @media screen and (max-width: 800px) {
+         padding-top: 180px;
+      }
+   }
+
+   &__title{
+      margin-bottom: 80px;
+      text-align: center;
+      color: red;
+
+      @media screen and (max-width: 800px) {
+         margin-bottom: 50px;
+      }
+   }
+
+   &-list{
+      display: flex;
+      flex-wrap: wrap;
+
+      &__item{
+         width: 50%;
+         text-align: center;
+         
+         @media screen and (max-width: 800px) {
+            width: 100%;
+            padding: 0 20px;
+         }
+      }
+
+      &__link{
+         display: inline-block;
+         padding: 20px 0;
+         font-size: 20px;
+         color: black;
+         transition: .2s ease;
+
+         &:hover{
+            color: red;
+            letter-spacing: 2px;
+         }
+      }
+   }
+}
